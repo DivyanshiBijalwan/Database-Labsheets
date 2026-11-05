@@ -1,0 +1,5 @@
+/* Q4: CSS registration styling */
+body{font-family:Arial,sans-serif;background:#f3f6fb;color:#243247}
+form{max-width:480px;margin:30px auto;padding:24px;background:white;border-radius:10px}
+label{display:block;margin:14px 0}input,select{display:block;width:100%;padding:10px;margin-top:6px;box-sizing:border-box}
+button{background:#1769aa;color:white;border:0;padding:11px 18px;border-radius:6px}

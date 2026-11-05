@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}<section class="panel"><h2>Update Student</h2><form method="post">
+<label>Student ID<input type="number" name="student_id" required></label>
+<label>New Name<input name="name" required></label><label>New Age<input type="number" name="age" required></label>
+<label>New Department<input name="department" required></label><label>New Marks<input type="number" name="marks" min="0" max="100" step="0.01" required></label>
+<button>Update Student</button></form></section>{% endblock %}

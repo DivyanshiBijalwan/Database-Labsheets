@@ -1,0 +1,9 @@
+-- Q18: Double marks
+USE CollegeDB;
+
+DELIMITER //
+CREATE FUNCTION DoubleMarks(p_Marks DECIMAL(5,2))
+RETURNS DECIMAL(6,2) DETERMINISTIC
+BEGIN RETURN p_Marks * 2; END //
+SELECT DoubleMarks(76.5) AS DoubleMarks;
+DELIMITER ;

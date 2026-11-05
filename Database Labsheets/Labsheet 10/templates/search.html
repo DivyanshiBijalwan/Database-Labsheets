@@ -1,0 +1,2 @@
+{% extends "base.html" %}{% block content %}<section class="panel"><h2>Search Medicine</h2><form method="post"><label>Medicine ID or Name<input name="term" required></label><button>Search</button></form>
+{% if medicine %}<h3>Medicine found</h3><p>{{ medicine }}</p>{% endif %}</section>{% endblock %}

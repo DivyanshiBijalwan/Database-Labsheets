@@ -1,0 +1,9 @@
+-- Q17: Higher number
+USE CollegeDB;
+
+DELIMITER //
+CREATE FUNCTION HigherNumber(a INT, b INT)
+RETURNS INT DETERMINISTIC
+BEGIN RETURN GREATEST(a, b); END //
+SELECT HigherNumber(15, 25) AS HigherNumber;
+DELIMITER ;

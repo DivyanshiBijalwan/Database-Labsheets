@@ -1,0 +1,6 @@
+# Q1: Environment setup
+# Windows PowerShell
+py -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install Flask PyMongo
+python -c "import flask, pymongo; print('Flask and PyMongo imported successfully')"

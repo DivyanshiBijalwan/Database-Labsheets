@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}<section class="panel"><h2>{% if filtered %}Filtered Students{% else %}All Students{% endif %}</h2>
+<form method="get" action="{{ url_for('filter_students') }}" class="inline">
+<input name="department" placeholder="Department (optional)">
+<select name="condition"><option value="all">All</option><option value="above75">Marks above 75</option><option value="between50and80">Marks 50–80</option><option value="older20">Age above 20</option></select><button>Filter</button></form>
+<table><thead><tr><th>ID</th><th>Name</th><th>Age</th><th>Gender</th><th>Department</th><th>Marks</th><th>Delete</th></tr></thead><tbody>
+{% for s in students %}<tr><td>{{ s.student_id }}</td><td>{{ s.name }}</td><td>{{ s.age }}</td><td>{{ s.gender }}</td><td>{{ s.department }}</td><td>{{ s.marks }}</td><td><form method="post" action="{{ url_for('delete_student') }}"><input type="hidden" name="student_id" value="{{ s.student_id }}"><button class="danger">Delete</button></form></td></tr>{% else %}<tr><td colspan="7">No students found.</td></tr>{% endfor %}
+</tbody></table></section>{% endblock %}

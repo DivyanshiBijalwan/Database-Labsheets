@@ -1,0 +1,5 @@
+/* Q3: CSS medicine page */
+body{font-family:Arial,sans-serif;background:#f4f7f5;color:#26352d}
+h1{text-align:center;color:#245b48}form{max-width:520px;margin:25px auto;background:white;padding:25px;border-radius:12px}
+label{display:block;margin:14px 0;font-weight:bold}input{display:block;width:100%;padding:10px;margin-top:6px;box-sizing:border-box;border:1px solid #cbd5d1;border-radius:6px}
+button{background:#287b5d;color:white;border:0;padding:11px 18px;border-radius:6px}

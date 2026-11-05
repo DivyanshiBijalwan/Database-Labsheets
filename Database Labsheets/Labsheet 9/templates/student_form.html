@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}<section class="panel"><h2>{{ action }} Student</h2>
+<form method="post">
+<label>Student ID<input type="number" name="student_id" required></label>
+<label>Student Name<input name="name" required></label>
+<label>Age<input type="number" name="age" min="1" required></label>
+<label>Gender<select name="gender"><option>Male</option><option>Female</option><option>Other</option></select></label>
+<label>Department<input name="department" required></label>
+<label>Marks<input type="number" name="marks" min="0" max="100" step="0.01" required></label>
+<button type="submit">Save Student</button></form></section>{% endblock %}

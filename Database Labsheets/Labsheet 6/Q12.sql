@@ -1,0 +1,9 @@
+-- Q12: Find square
+USE CollegeDB;
+
+DELIMITER //
+CREATE FUNCTION FindSquare(n INT)
+RETURNS INT DETERMINISTIC
+BEGIN RETURN n * n; END //
+SELECT FindSquare(5) AS Square;
+DELIMITER ;

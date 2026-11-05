@@ -1,0 +1,3 @@
+{% extends "base.html" %}
+{% block content %}<section class="panel"><h2>Search Student</h2><form method="post"><label>Student ID or Name<input name="student_id" required></label><button>Search</button></form>
+{% if student %}<h3>Student Details</h3><p>ID: {{ student.student_id }}</p><p>Name: {{ student.name }}</p><p>Age: {{ student.age }}</p><p>Gender: {{ student.gender }}</p><p>Department: {{ student.department }}</p><p>Marks: {{ student.marks }}</p>{% endif %}</section>{% endblock %}
